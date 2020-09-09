@@ -1,0 +1,29 @@
+def say(score0, score1):
+      if who == 0 and abs(score0-previous_score)>previous_high:
+          print(score0,'point(s)! That is the biggest gain yet for Player 0')
+          def previous_high_new():
+              return abs(score0-previous_score)
+      elif who == 1 and abs(score1-previous_score)>previous_high:
+          print(score1,'point(s)! That is the biggest gain yet for Player 1')
+          def previous_high_new():
+              return abs(score1-previous_score)
+      return announce_highest
+  return say
+
+
+
+
+
+
+
+
+def say(score0, score1):
+    if who == 0:
+        score = score0
+    else:
+        score = score1
+        diff = abs(score - previous_score)
+if diff > previous_high:
+    print(str(diff),"point(s)! That's is the biggest gain yet for Player ", str(who))
+    return announce_highest(who,max(diff,previous_high),current_score)
+return say
