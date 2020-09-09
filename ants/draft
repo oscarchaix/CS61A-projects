@@ -1,0 +1,5 @@
+def can_contain(self, other):
+      if self.name == 'BodyguardAnt':
+          return True
+      else:
+          return False
